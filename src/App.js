@@ -10,19 +10,16 @@ function App() {
     <div className="App">
       <h1>Resume Builder</h1>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Resume userInfo={userInfo} />
-          }
-        />
+        <Route path="/" element={<Resume userInfo={userInfo} />} />
         <Route
           path="/add-info"
           element={<UserInfoForm onSave={setUserInfo} />}
         />
         <Route
           path="/edit-info"
-          element={<UserInfoForm existingInfo={userInfo} onSave={setUserInfo} />}
+          element={
+            <UserInfoForm existingInfo={userInfo} onSave={setUserInfo} />
+          }
         />
       </Routes>
     </div>
