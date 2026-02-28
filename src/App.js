@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import UserInfoForm from "./components/UserInfoForm";
 import "./App.css";
 
@@ -62,9 +62,9 @@ function UserInfoDisplay({ userInfo }) {
     return (
       <div className="resumeSection userInfoSection">
         <p>No personal information added yet.</p>
-        <a href="/add-info">
+        <Link to="/add-info">
           <button>Add Personal Info</button>
-        </a>
+        </Link>
       </div>
     );
   }
@@ -74,9 +74,9 @@ function UserInfoDisplay({ userInfo }) {
       <h2>{userInfo.name}</h2>
       <p>{userInfo.phone}</p>
       <p>{userInfo.email}</p>
-      <a href="/edit-info">
+      <Link to="/edit-info">
         <button>Edit Personal Info</button>
-      </a>
+      </Link>
     </div>
   );
 }
