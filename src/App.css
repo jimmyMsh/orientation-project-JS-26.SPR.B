@@ -26,4 +26,88 @@ button {
   padding: 10px;
   border-radius: 4px;
   background-color: rgb(248 185 42);
+  cursor: pointer;
+  border: none;
+  margin: 5px;
+}
+
+/* Logo Dropzone */
+.logoDropzoneWrapper {
+  margin: 10px 20px;
+}
+
+.logoDropzone {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.logoDropzone:hover {
+  border-color: rgb(29, 83, 159);
+  background-color: #f0f4ff;
+}
+
+.logoDropzoneActive {
+  border-color: rgb(29, 83, 159);
+  background-color: #e8effa;
+}
+
+.logoDropzoneHasImage {
+  border-style: solid;
+  border-color: #ddd;
+}
+
+.logoPlaceholder p {
+  margin: 4px 0;
+  color: #888;
+  font-style: normal;
+}
+
+.logoPlaceholderHint {
+  font-size: 0.85rem;
+}
+
+.logoPreview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logoImage {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.logoRemoveBtn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  background-color: #e74c3c;
+  color: white;
+}
+
+.logoRemoveBtn:hover {
+  background-color: #c0392b;
+}
+
+/* Logo Display */
+.logoEmpty {
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.logoDisplayContainer {
+  margin: 8px 0;
+}
+
+.logoDisplayImage {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  border-radius: 6px;
 }
